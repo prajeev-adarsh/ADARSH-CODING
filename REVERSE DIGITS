@@ -1,0 +1,18 @@
+def reverse_digit(N):
+    reversed_num = 0
+    
+    while N > 0:
+        # Extract the last digit of the number
+        digit = N % 10
+        
+        # Append the digit to the reversed number
+        reversed_num = (reversed_num * 10) + digit
+        
+        # Update the original number by removing the last digit
+        N //= 10
+    
+    return reversed_num
+
+# Example usage:
+# N = 12345
+# print(reverse_digit(N))
