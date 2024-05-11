@@ -1,0 +1,22 @@
+def isDigitSumPalindrome(n):
+    # Function to compute the digit sum of a number
+    def digit_sum(num):
+        sum = 0
+        while num > 0:
+            sum += num % 10
+            num //= 10
+        return sum
+    
+    # Compute the digit sum of the given number
+    digit_sum_n = digit_sum(n)
+    
+    # Convert the digit sum to a string and check if it's a palindrome
+    digit_sum_str = str(digit_sum_n)
+    if digit_sum_str == digit_sum_str[::-1]:
+        return "PALINDROME"
+    else:
+        return "NOT PALINDROME"
+
+# Example usage:
+# n = 12345
+# print(isDigitSumPalindrome(n))
