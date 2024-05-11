@@ -1,0 +1,13 @@
+def seriesSum(n):
+    # Calculate the sum of the series using the formula
+    series_sum = n * (n + 1) // 2
+    return series_sum
+
+# Example usage:
+# n = 5
+# print(seriesSum(n))
+
+#Explanation:
+#We use the formula for the sum of the series, which is n times n plus 1, divided by 2.
+#We ensure integer division by using //.
+#The function returns the calculated sum.
