@@ -1,0 +1,13 @@
+def getTable(N):
+    # Initialize an empty list to store the multiplication results
+    table = []
+
+    # Generate the multiplication table from 1 to 10
+    for i in range(1, 11):
+        table.append(N * i)
+
+    return table
+
+# Example usage:
+# N = 5
+# print(getTable(N))
