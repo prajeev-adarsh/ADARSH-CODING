@@ -1,0 +1,7 @@
+def addition(A, B):
+    return A + B
+
+# Example usage:
+# A = 1234567890123456789
+# B = 9876543210987654321
+# print(addition(A, B))
