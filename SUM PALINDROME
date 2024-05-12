@@ -1,0 +1,25 @@
+def is_palindrome(num):
+    # Convert the number to a string
+    num_str = str(num)
+    
+    # Check if the string is equal to its reverse
+    return num_str == num_str[::-1]
+
+def isSumPalindrome(n):
+    # Initialize the number to check
+    num = n
+    # Iterate up to 5 times to check if the sum becomes a palindrome
+    for _ in range(5):
+        # Calculate the sum of the number and its reverse
+        sum_num_reverse = num + int(str(num)[::-1])
+        # If the sum is a palindrome, return it
+        if is_palindrome(sum_num_reverse):
+            return sum_num_reverse
+        # Update the number to the sum for the next iteration
+        num = sum_num_reverse
+    # If no palindrome sum found after 5 iterations, return -1
+    return -1
+
+# Example usage:
+# n = 87
+# print(isSumPalindrome(n))
