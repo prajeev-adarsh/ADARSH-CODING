@@ -1,0 +1,9 @@
+def oddEven(N):
+    if N % 2 == 0:
+        return "even"
+    else:
+        return "odd"
+
+# Example usage:
+# N = 7
+# print(oddEven(N))
