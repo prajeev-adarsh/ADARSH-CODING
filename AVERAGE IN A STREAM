@@ -1,0 +1,26 @@
+def streamAvg(arr, n):
+    # Initialize an empty list to store the average at every point in the stream
+    averages = []
+
+    # Initialize a variable to store the sum of the first 'n' elements
+    rolling_sum = sum(arr[:n])
+
+    # Calculate the average for the first 'n' elements
+    average = rolling_sum / n
+    averages.append(average)
+
+    # Iterate through the remaining elements in the stream
+    for i in range(n, len(arr)):
+        # Update the rolling sum by adding the new element and subtracting the oldest element
+        rolling_sum += arr[i] - arr[i - n]
+        
+        # Calculate the average for the current window
+        average = rolling_sum / n
+        averages.append(average)
+
+    return averages
+
+# Example usage:
+# arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# n = 3
+# print(streamAvg(arr, n))
