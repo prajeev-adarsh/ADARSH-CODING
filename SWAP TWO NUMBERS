@@ -1,0 +1,11 @@
+def get(a, b):
+    # Swap the values of a and b using a temporary variable
+    temp = a
+    a = b
+    b = temp
+    return [a, b]
+
+# Example usage:
+# a = 5
+# b = 10
+# print(get(a, b))
