@@ -1,0 +1,7 @@
+def oppositeFaceOfDice(N):
+    # Calculate the opposite face of the dice
+    return 7 - N
+
+# Example usage:
+# N = 3
+# print(oppositeFaceOfDice(N))
