@@ -1,0 +1,14 @@
+def nthTermOfAP(a1, a2, n):
+    # Calculate the common difference
+    common_difference = a2 - a1
+    
+    # Calculate the nth term using the formula
+    nth_term = a1 + (n - 1) * common_difference
+    
+    return nth_term
+
+# Example usage:
+# a1 = 2
+# a2 = 5
+# n = 4
+# print(nthTermOfAP(a1, a2, n))
