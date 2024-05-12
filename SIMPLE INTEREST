@@ -1,0 +1,10 @@
+def simpleInterest(P, R, T):
+    # Calculate the simple interest using the formula
+    SI = (P * R * T) / 100
+    return SI
+
+# Example usage:
+# P = 1000
+# R = 5
+# T = 2
+# print(simpleInterest(P, R, T))
