@@ -1,0 +1,9 @@
+def sum_of_square_evenNumbers(N):
+    # Calculate the sum of the first N even natural numbers
+    Sum = N * (N + 1)
+    
+    return Sum
+
+# Example usage:
+# N = 5
+# print(sum_of_square_evenNumbers(N))
