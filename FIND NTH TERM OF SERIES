@@ -1,0 +1,15 @@
+def findNthTerm(N):
+    # First term of the sequence
+    first_term = 1
+    
+    # Common difference between consecutive terms
+    common_difference = 3
+    
+    # Calculate the nth term using the formula
+    nth_term = first_term + (N - 1) * common_difference
+    
+    return nth_term
+
+# Example usage:
+# N = 5
+# print(findNthTerm(N))
