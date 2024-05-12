@@ -1,0 +1,14 @@
+def greatestOfThree(A, B, C):
+    # Find the maximum of A and B
+    max_AB = max(A, B)
+    
+    # Find the maximum of max_AB and C, which is the greatest among A, B, and C
+    greatest = max(max_AB, C)
+    
+    return greatest
+
+# Example usage:
+# A = 10
+# B = 20
+# C = 15
+# print(greatestOfThree(A, B, C))
